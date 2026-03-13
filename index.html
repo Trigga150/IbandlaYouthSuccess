@@ -3,23 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ibandla Youth Success - Loading</title>
+  <title>Ibandla Youth Success - Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script>
-    // Redirect to Home.html after 3 seconds
-    setTimeout(function(){
-      window.location.href = "home.html";
-    }, 3000);
-  </script>
 </head>
-<body class="loading">
-  <div class="text-center">
-    <div class="loader"></div>
-    <h2 class="fw-bold">Ibandla Youth Success</h2>
-    <p>Loading... Please wait</p>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Ibandla Youth Success</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#apply">Apply</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="powered">Powered by TechInOP</div>
+</nav>
+
+<!-- Hero Section -->
+<header id="home" class="hero d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Empowering Youth for a Brighter Future</h1>
+    <p class="lead">Helping young people succeed in education, careers, and life.</p>
+    <a href="#apply" class="btn btn-warning btn-lg mt-3">Apply Now</a>
+  </div>
+</header>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">University Applications</h5>
+            <p class="card-text">Guidance and support for applying to universities and scholarships.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Skills Development</h5>
+            <p class="card-text">Training in coding, entrepreneurship, and digital literacy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Recruitment Agency</h5>
+            <p class="card-text">Connecting youth with job opportunities and internships.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Mental Health Support</h5>
+            <p class="card-text">Workshops and counseling to support emotional well-being.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Mentorship</h5>
+            <p class="card-text">Pairing youth with mentors for guidance and career growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Apply Section -->
+<section id="apply" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Apply for Opportunities</h2>
+    <p>Fill out the form below to apply for university support, skills training, or job placement.</p>
+    <form class="row g-3 justify-content-center">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Full Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Email Address" required>
+      </div>
+      <div class="col-md-6">
+        <select class="form-select" required>
+          <option selected disabled>Choose Service</option>
+          <option>University Applications</option>
+          <option>Skills Development</option>
+          <option>Recruitment</option>
+          <option>Mental Health Support</option>
+          <option>Mentorship</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Phone Number" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="4" placeholder="Tell us about yourself"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-warning">Submit Application</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Get in Touch</h5>
+        <p>Email: info@ibandlayouth.org</p>
+        <p>Phone: +27 78 123 4567</p>
+        <p>Location: Soweto, Johannesburg, South Africa</p>
+      </div>
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2026 Ibandla Youth Success | Powered by TechInOP</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
