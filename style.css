@@ -9,7 +9,7 @@ body, html {
 body.loading {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('loading-bg.jpg') no-repeat center center/cover;
+              url('images/bg.png') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
